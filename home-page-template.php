@@ -15,12 +15,8 @@
 		while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
 			<div class="banner-wrapper">
 				<div class="banner-post">
-					<div class="banner-thumbanial">
-						 <?php if ( has_post_thumbnail() ) {
-								the_post_thumbnail( 'full' );
-						} else {
-				                the_content();
-					    } ?>
+					<div class="banner-thumbanial" style="background-image:url( <?php echo get_the_post_thumbnail_url( get_the_ID() );?> )">
+						 
                     </div>
                     <div class="banner-content-wrapper">
 						<h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
@@ -87,13 +83,12 @@
 
                            
                             $pages_sub = get_children( $args_sub );
-							 /* echo "<pre>";
-								print_r($pages_sub);
-                            echo "</pre>"; */
+							 
 							 ?>
                              <?php  foreach( $pages_sub as $page_grand ) { 
 								
-							?>
+							?> 
+											
 								
 									<div class="sub-page-listing">
                                       

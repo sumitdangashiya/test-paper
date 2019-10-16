@@ -1145,21 +1145,26 @@ p.footer-content {
 
 article.banner-post-wrapper {
     background-color: #A9A9A9;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    /* margin: 0px auto; */
 }
-.banner-post {
+
+.banner-container {
+    display: block;
     max-width: 980px;
     margin: 0px auto;
-    position: relative;
 }
+
 .banner-post-thumbnail {
     text-align: center;
 }
 
 .banner-thumbanial {
-   
-    padding-left: 15px;
+    /* padding-left: 15px; */
+    height: 300px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
 .banner-content-wrapper {
@@ -1232,8 +1237,9 @@ ul.tabs li {
     font-family: Gorgia;
     font-size: 17px;
     color: #993408;
-	padding-left:5px;
-	margin-bottom:20px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    line-height: 1.4;
 }
 .tab-content {
     display: none;
@@ -1383,14 +1389,14 @@ ul.tabs li.current {
 
 button.owl-prev {
     position: absolute;
-    top: 10%;
-    right: 15%;
+    top: 5%;
+    right: 2%;
 }
 
 button.owl-next {
     position: absolute;
-    bottom: 10%;
-    right: 15%;
+    bottom: 0%;
+    right: 2%;
 }
 .banner-content-wrapper h3, .banner-content-wrapper p {
     padding-left: 15px;
@@ -1421,8 +1427,8 @@ button.owl-next {
 }
 .banner-container .owl-dots {
     position: absolute;
-    top: 100px;
-    right: 205px;
+    top: 130px;
+    right: 25px;
 }
 .banner-container button.owl-dot {
     display: block;
